@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build-core": "cd ./core && webpack && cd ..",
+    "build-plugin": "cd ./extension1 && webpack && cd ..",
+    "build-app": "cd ./app && webpack && cd ..",
+    "build": "npm run build-core && npm run build-plugin && npm run build-app"
+  },
+  "dependencies": {
+    "webpack": "^2.5.1"
+  }
+}
